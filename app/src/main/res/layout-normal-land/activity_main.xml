@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/clMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        >
+        <TextView
+            android:id="@+id/tvRestaurantName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:text="MOTI MAHAL RESTAURANT"
+            />
+
+        <RelativeLayout
+            android:id="@+id/fragment_switch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="50dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tvEnglish"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="ENGLISH"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:background="@color/green_dark"
+                android:layout_marginBottom="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tvHindi"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="HINDI"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:background="@color/white"
+                android:layout_marginBottom="5dp"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

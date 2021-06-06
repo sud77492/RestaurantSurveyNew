@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    tools:ignore="MissingDefaultResource">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:hint="Name (optional)"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:imeOptions="actionDone"
+        android:background="@drawable/edittext_border"
+        />
+
+    <EditText
+        android:id="@+id/etMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:hint="Mobile Number (Optional)"
+        android:textSize="15dp"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:layout_below="@id/etName"
+        android:background="@drawable/edittext_border"
+        />
+
+    <Button
+        android:id="@+id/btStartSurvey"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_below="@+id/etMobile"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@color/colorPrimaryDark"
+        android:text="START SURVEY" />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/clMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_centerVertical="true"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    tools:ignore="MissingDefaultResource">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="60dp"
+        android:clickable="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:focusableInTouchMode="true"
+        >
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="50dp"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:text="LOGIN"
+            android:textColor="@color/colorPrimaryDark"/>
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:padding="15dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginRight="150dp"
+                android:hint="Username"
+                android:layout_below="@+id/tvLogin"
+                android:imeOptions="actionDone"
+                android:background="@drawable/layout_edittext"
+
+
+                />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginRight="150dp"
+                android:hint="Password"
+                android:imeOptions="actionDone"
+                android:background="@drawable/layout_edittext"
+                android:layout_below="@id/etUsername"
+                />
+
+            <Button
+                android:id="@+id/btLogin"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginRight="150dp"
+                android:layout_below="@+id/etPassword"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="@color/colorPrimaryDark"
+                android:text="LOGIN" />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="What do you think about this food?"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvQuestion"
+        android:layout_marginTop="40dp"
+        android:weightSum="5"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/tvll1One"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:text="GREAT"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:background="@color/excellent_color"
+            />
+
+        <TextView
+            android:id="@+id/tvll1Two"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:text="GOOD"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:background="@color/good_color"
+            />
+
+
+        <TextView
+            android:id="@+id/tvll1Three"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:text="AVERAGE"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:background="@color/average_color"
+            />
+
+        <TextView
+            android:id="@+id/tvll1Four"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:text="BAD"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:background="@color/poor_color"
+
+            />
+
+        <TextView
+            android:id="@+id/tvll1Five"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:text="VERY BAD"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:background="@color/very_poor_color"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvQuestion"
+        android:layout_marginTop="40dp"
+        android:weightSum="3"
+        >
+
+        <TextView
+            android:id="@+id/tvll2One"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:text="GREAT"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:background="@color/excellent_color"
+            />
+
+        <TextView
+            android:id="@+id/tvll2Two"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:text="GOOD"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:background="@color/good_color"
+            />
+
+
+        <TextView
+            android:id="@+id/tvll2Three"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:text="VERY BAD"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:background="@color/very_poor_color"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
